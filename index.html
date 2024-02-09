@@ -1,30 +1,48 @@
-<section>
-    <link rel="stylesheet" href="app.css">
-    <div class="box2 box">
-        <div class="content">
-            <div class="row">
-                <div class="image">
-                    <img src="eyes.jpg" alt="Profile Image">
-                </div>
-                <div class="post">
-                    <p>Post</p>
-                    <h5>6</h5>
-                </div>
-                <div class="followers">
-                    <p>Followers</p>
-                    <h5>66</h5>
-                </div>
-                <div class="following">
-                    <p>Following</p>
-                    <h5>666</h5>
-                </div>
-            </div>
-            <div class="text">
-                <p class="name">Gempita Rizki</p>
-                <p class="job_title">Web Developer</p>
-                <p class="about">About</p>
-                <p class="job_discription">Lifetime learner.</p>
-            </div>
-        </div>
+<body style="background-color: black;">
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
     </div>
-</section>
+    <section>
+        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="background/rock.css">
+
+        <div class="box2 box">
+            <div class="content">
+                <div class="row">
+                    <div class="image">
+                        <img src="eyes.jpg" alt="Profile Image">
+                    </div>
+                    <div class="post">
+                        <p>Post</p>
+                        <h5>6</h5>
+                    </div>
+                    <div class="followers">
+                        <p>Followers</p>
+                        <h5>66</h5>
+                    </div>
+                    <div class="following">
+                        <p>Following</p>
+                        <h5>666</h5>
+                    </div>
+                </div>
+                <div class="text">
+                    <p class="name">Gempita Rizki</p>
+                    <p class="job_title">Web Developer</p>
+                    <p class="about">About</p>
+                    <p class="job_discription">Lifetime learner.</p>
+                </div>
+            </div>
+            <audio id="background-music" controls autoplay loop>
+                <source src="audio/plutoprojector.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var audio = document.getElementById('background-music');
+            audio.play();
+        });
+    </script>
